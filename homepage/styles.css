@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: #0F0E0E;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    margin: 15px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #4e67a7;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+.badge a {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.img__art2 {
+    position: fixed;
+    height: 30vh;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.img__aside {
+    position: absolute;
+    height: 20vh;
+    top: 0;
+    left: 0;
+}
+
+
+/* HOME PAGE */
+
+.badge {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    width: 425px;
+    height: 530px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.photo {
+    position: relative;
+    width: 216px;
+    height: 216px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+#bage-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.badge button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 154px;
+    height: 57px;    
+    border-radius: 50px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+#about {
+    background-color: #0047FF;
+    color: white;
+}
+
+#project {
+    background-color: white;
+    color: #0047FF;
+}
+
+.icons {
+    opacity: 0.8;
+    max-width: 40px;
+}
+
+#icon {
+    opacity: 0.8;
+    max-width: 35px;
+}
+
+
+/* ABOUT PAGE */
+
+.about-content {
+    box-sizing: border-box;
+    border: 1px solid #063CA5;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.392) 0%, rgba(45, 45, 46, 0.16) 100%);
+    padding: 10vh;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.inner-wrapper {
+    margin-bottom: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+h1::after {
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 80%;
+    height: 8px;
+    background-color: #063CA5;
+    border-radius: 5px;
+}
+
+/* PHOTOGRAPHY PAGE */
+
+.grid-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem; 
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.grid-item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.grid-item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.grid-item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.grid-item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+/* PROJECTS */
+
+.corner-img {
+    position: fixed;
+    height: 15vh;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content-projects {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-1:hover, .content-2:hover, .content-3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.content-1, .content-2, .content-3 {
+    background-color: #1E2D49;
+    margin-right: 2vw;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.content__img {
+    background-color: white;
+    width: 50vh;
+    height: 60%;
+    margin-bottom: 20px;
+}
+
+.content-projects img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.content-projects p {
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: start;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.content-projects h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.content-projects a {
+    text-decoration: none;
+}
